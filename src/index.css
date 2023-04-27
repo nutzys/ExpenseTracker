@@ -1,13 +1,144 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+    --primary: #e9ecef;
+    --secondary: #ffc9c9;
+    --third: #fcc2d7;
+    --textcolor: #868e96;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    color: var(--textcolor);
+}
+
+.budget-container {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100px;
+    padding: 20px;
+    gap: 10px;
+}
+
+.budget {
+    background-color: var(--primary);
+    width: 33.33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: var(--textcolor);
+}
+
+.remaining {
+    background-color: var(--secondary);
+    width: 33.33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: var(--textcolor);
+}
+.spent {
+    background-color: var(--third);
+    width: 33.33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: var(--textcolor);
+}
+
+.filter {
+    width: 100%;
+    height: 30px;
+    margin: 20px 0;
+}
+
+.expense {
+    border: 1px solid black;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.expense-price {
+    background-color: var(--secondary);
+    border-radius: 150px;
+    padding: 5px 12px;
+    font-size: 12px;
+
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+.cross:hover {
+    color: red;
+}
+
+.delete-button {
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+}
+
+.add-expense-container {
+    margin-top: 20px;
+}
+
+.add-expense {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+}
+
+.new-expense-input {
+    height: 20px;
+}
+button {
+    padding: 5px 20px;
+    height: 30px;
+    border: none;
+    background-color: #228be6;
+    border-radius: 150px;
+}
+
+button:hover {
+    background-color: #1c7ed6;
+    transition: 200ms ease-in;
+}
+
+.expense-form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.save-button{
+    width: 33.33%;
+    height: 100%;
+}
+
+.expense-forms {
+    display: flex;
+}
+
+.button-div {
+    height: 100%;
+    display: flex;
+    justify-content: center;
 }
